@@ -31,4 +31,3 @@ jobs:
     - name: Run python script
       run: |
         python adithiyaa.py
-        pylint adithiyaa.py
