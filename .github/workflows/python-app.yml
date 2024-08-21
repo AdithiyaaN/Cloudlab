@@ -28,7 +28,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest pandas scikit-learn numpy
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Lint with flake8
-      run: 
-      python adithiyaa.py
-      pylint adithiyaa.py
+    - name: Run python script
+      run: |
+        python adithiyaa.py
+        pylint adithiyaa.py
