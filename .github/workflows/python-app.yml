@@ -26,8 +26,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install flake8 pytest pandas scikit-learn numpy
+        pip install flake8 pytest pandas scikit-learn numpy request render_template
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Run python script
+        
+    - name: Run app.py
       run: |
-        python adithiyaa.py
+        python app.py
