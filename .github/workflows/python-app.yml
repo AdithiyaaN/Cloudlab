@@ -31,4 +31,4 @@ jobs:
         
     - name: Run app.py
       run: |
-        python linear_regression_flask\app.py
+        python linear_regression_flask/app.py
