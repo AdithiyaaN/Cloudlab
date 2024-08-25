@@ -26,10 +26,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install flake8 pytest pandas scikit-learn numpy flask
+        pip install flake8 pytest pandas scikit-learn numpy
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         
-    - name: Run app.py
+    - name: Run python script
       run: |
-        export FLASK_APP=linear_regression_flask/app.py
-        flask run --host=0.0.0.0 --port=8080
+        python adithiyaa.py
